@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brösmeli – Coming Soon</title>
+  <style>
+    :root {
+      --bg: #fff8ec;
+      --panel: #f4efdb;
+      --brown: #5a3e2b;
+      --brown-soft: #8a5a3b;
+      --pill-radius: 9999px;
+      --card-radius: 18px;
+      --shadow: 0 16px 40px rgba(0,0,0,0.12);
+      --font-body: "Nunito", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      --font-heading: "Playfair Display", "Georgia", serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: radial-gradient(120% 120% at 20% 20%, #f7d9a9 0%, #fff8ec 45%, #f4efdb 100%);
+      font-family: var(--font-body);
+      color: var(--brown);
+    }
+    .card {
+      background: var(--panel);
+      border-radius: 24px;
+      padding: 32px 28px;
+      max-width: 480px;
+      width: 100%;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+    .logo {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+    }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-size: 0.7rem;
+      opacity: 0.7;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      margin: 0 0 12px;
+      line-height: 1.2;
+    }
+    p {
+      margin: 0 0 20px;
+      line-height: 1.5;
+      opacity: 0.9;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 20px;
+      border-radius: var(--pill-radius);
+      border: 1px solid rgba(90, 62, 43, 0.25);
+      color: var(--brown);
+      background: linear-gradient(145deg, #ffe9cc, #f2e2cb);
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+    .pill:hover { transform: translateY(-1px); box-shadow: 0 10px 24px rgba(0,0,0,0.12); }
+    .pill:active { transform: translateY(0); box-shadow: 0 6px 16px rgba(0,0,0,0.08); }
+    .cta {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .footer {
+      margin-top: 18px;
+      font-size: 0.85rem;
+      opacity: 0.75;
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <div class="logo">Brösmeli</div>
+    <div class="eyebrow">Bald verfügbar</div>
+    <h1>Frisch gebacken, bald online.</h1>
+    <p>Wir verfeinern noch die letzten Details. Trag dich ein, und wir benachrichtigen dich, sobald der Shop live ist.</p>
+    <div class="cta">
+      <a class="pill" href="mailto:kontakt@brosmeli.ch">kontakt@brosmeli.ch</a>
+      <a class="pill" href="https://www.instagram.com/broesmeli_baeckerei/" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </div>
+    <div class="footer">Bleib neugierig – die nächste Ladung Cookies kommt schon bald.</div>
+  </main>
+</body>
+</html>
